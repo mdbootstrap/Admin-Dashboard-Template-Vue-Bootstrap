@@ -1,31 +1,31 @@
 <template>
   <section id="maps">
-    <row>
-      <column md="6">
-        <card cascade narrow class="mt-5">
-          <view-wrapper class="gradient-card-header blue darken-2">
+    <mdb-row>
+      <mdb-col md="6">
+        <mdb-card cascade narrow class="mt-5">
+          <mdb-view class="gradient-card-header blue darken-2">
             <h4 class="h4-responsive text-white">
               Regular map
             </h4>
-          </view-wrapper>
-          <card-body class="text-center">
+          </mdb-view>
+          <mdb-card-body class="text-center">
             <GmapMap
               :center="{lat:10, lng:10}"
               :zoom="7"
               style="width: 100%; height: 300px"
             >
             </GmapMap>
-          </card-body>
-        </card>
-      </column>
-      <column md="6">
-        <card cascade narrow class="mt-5">
-          <view-wrapper class="gradient-card-header blue darken-2">
+          </mdb-card-body>
+        </mdb-card>
+      </mdb-col>
+      <mdb-col md="6">
+        <mdb-card cascade narrow class="mt-5">
+          <mdb-view class="gradient-card-header blue darken-2">
             <h4 class="h4-responsive text-white">
               Hybrid map
             </h4>
-          </view-wrapper>
-          <card-body class="text-center">
+          </mdb-view>
+          <mdb-card-body class="text-center">
             <GmapMap
               :center="{lat:10, lng:10}"
               :zoom="7"
@@ -33,19 +33,19 @@
               style="width: 100%; height: 300px"
             >
             </GmapMap>
-          </card-body>
-        </card>
-      </column>
-    </row>
-    <row>
-      <column md="6">
-        <card cascade narrow class="mt-5">
-          <view-wrapper class="gradient-card-header blue darken-2">
+          </mdb-card-body>
+        </mdb-card>
+      </mdb-col>
+    </mdb-row>
+    <mdb-row>
+      <mdb-col md="6">
+        <mdb-card cascade narrow class="mt-5">
+          <mdb-view class="gradient-card-header blue darken-2">
             <h4 class="h4-responsive text-white">
               Satellite map
             </h4>
-          </view-wrapper>
-          <card-body class="text-center">
+          </mdb-view>
+          <mdb-card-body class="text-center">
             <GmapMap
               :center="{lat:10, lng:10}"
               :zoom="7"
@@ -53,17 +53,17 @@
               style="width: 100%; height: 300px"
             >
             </GmapMap>
-          </card-body>
-        </card>
-      </column>
-      <column md="6">
-        <card cascade narrow class="mt-5">
-          <view-wrapper class="gradient-card-header blue darken-2">
+          </mdb-card-body>
+        </mdb-card>
+      </mdb-col>
+      <mdb-col md="6">
+        <mdb-card cascade narrow class="mt-5">
+          <mdb-view class="gradient-card-header blue darken-2">
             <h4 class="h4-responsive text-white">
               Terrain map
             </h4>
-          </view-wrapper>
-          <card-body class="text-center">
+          </mdb-view>
+          <mdb-card-body class="text-center">
             <GmapMap
               :center="{lat:10, lng:10}"
               :zoom="7"
@@ -71,24 +71,24 @@
               style="width: 100%; height: 300px"
             >
             </GmapMap>
-          </card-body>
-        </card>
-      </column>
-    </row>
+          </mdb-card-body>
+        </mdb-card>
+      </mdb-col>
+    </mdb-row>
   </section>
 </template>
 
 <script>
-import { Row, Column, Card, ViewWrapper, CardBody } from 'mdbvue'
+import { mdbRow, mdbCol, mdbCard, mdbView, mdbCardBody } from 'mdbvue'
 
 export default {
   name: 'Maps',
   components: {
-    Row,
-    Column,
-    Card,
-    ViewWrapper,
-    CardBody
+    mdbRow,
+    mdbCol,
+    mdbCard,
+    mdbView,
+    mdbCardBody
   },
   data () {
     return {
