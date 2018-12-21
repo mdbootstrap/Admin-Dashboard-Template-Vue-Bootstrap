@@ -148,7 +148,7 @@
           <mdb-col md="6" class="mb-4">
               <mdb-card>
                   <mdb-card-body>
-                      <mdb-table hover>
+                      <mdb-tbl hover>
                           <thead class="blue-grey lighten-4">
                               <tr>
                                   <th>#</th>
@@ -177,14 +177,14 @@
                                   <td>Cell 9</td>
                               </tr>
                           </tbody>
-                      </mdb-table>
+                      </mdb-tbl>
                   </mdb-card-body>
               </mdb-card>
           </mdb-col>
           <mdb-col md="6" class="mb-4">
               <mdb-card>
                   <mdb-card-body>
-                      <mdb-table hover>
+                      <mdb-tbl hover>
                           <thead class="blue lighten-4">
                               <tr>
                                   <th>#</th>
@@ -213,7 +213,7 @@
                                   <td>Cell 9</td>
                               </tr>
                           </tbody>
-                      </mdb-table>
+                      </mdb-tbl>
                   </mdb-card-body>
               </mdb-card>
           </mdb-col>
@@ -537,7 +537,7 @@
 </template>
 
 <script>
-import { mdbRow, mdbCol, mdbBtn, mdbCard, mdbCardBody, mdbCardHeader, mdbCardText, mdbIcon, mdbTable, mdbBarChart, mdbPieChart, mdbLineChart, mdbRadarChart, mdbDoughnutChart, mdbListGroup, mdbListGroupItem, mdbBadge, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter } from 'mdbvue'
+import { mdbRow, mdbCol, mdbBtn, mdbCard, mdbCardBody, mdbCardHeader, mdbCardText, mdbIcon, mdbTbl, mdbBarChart, mdbPieChart, mdbLineChart, mdbRadarChart, mdbDoughnutChart, mdbListGroup, mdbListGroupItem, mdbBadge, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter } from 'mdbvue'
 
 export default {
   name: 'Dashboard',
@@ -550,7 +550,7 @@ export default {
     mdbCardHeader,
     mdbCardText,
     mdbIcon,
-    mdbTable,
+    mdbTbl,
     mdbBarChart,
     mdbPieChart,
     mdbLineChart,
