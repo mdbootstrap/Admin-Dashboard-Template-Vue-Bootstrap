@@ -5,7 +5,7 @@
       <mdb-navbar-brand href="https://mdbootstrap.com/docs/vue/" target="_blank">MDB</mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav left>
-          <router-link to="/dashboard" @click.native="activeItem = 1"><mdb-nav-item href="" waves-fixed active class="active">Home</mdb-nav-item></router-link>
+          <mdb-nav-item href="/" waves-fixed active class="active" router >Home</mdb-nav-item>
           <mdb-nav-item href="https://mdbootstrap.com/docs/vue/getting-started/quick-start/" waves-fixed>About MDB</mdb-nav-item>
           <mdb-nav-item href="https://mdbootstrap.com/docs/vue/getting-started/download/" waves-fixed>Free download</mdb-nav-item>
           <mdb-nav-item href="https://mdbootstrap.com/education/bootstrap/" waves-fixed>Free tutorials</mdb-nav-item>
