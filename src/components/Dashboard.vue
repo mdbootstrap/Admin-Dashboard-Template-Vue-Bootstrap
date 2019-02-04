@@ -16,7 +16,7 @@
         <mdb-col xl="3" md="6" class="mb-r">
           <mdb-card cascade class="cascading-admin-card">
             <div class="admin-up">
-              <mdb-icon icon="money" class="primary-color"/>
+              <mdb-icon icon="money-bill-alt" far class="primary-color"/>
               <div class="data">
                 <p>SALES</p>
                 <h4>
@@ -729,10 +729,9 @@ export default {
   margin-right: 4%;
   margin-top: -20px;
 }
-.cascading-admin-card .admin-up .fa {
+.cascading-admin-card .admin-up .fas,
+.cascading-admin-card .admin-up .far {
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.2), 0 2px 13px 0 rgba(0, 0, 0, 0.19);
-}
-.cascading-admin-card .admin-up .fa {
   padding: 1.7rem;
   font-size: 2rem;
   color: #fff;
