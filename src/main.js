@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import * as VueGoogleMaps from 'vue2-google-maps'
-import 'font-awesome/css/font-awesome.min.css'
 import 'bootstrap-css-only/css/bootstrap.min.css'
 import 'mdbvue/build/css/mdb.css'
 

@@ -36,7 +36,7 @@
         <mdb-col xl="3" md="6" class="mb-r">
           <mdb-card cascade class="cascading-admin-card">
             <div class="admin-up">
-              <mdb-icon icon="line-chart" class="warning-color"/>
+              <mdb-icon icon="chart-line" class="warning-color"/>
               <div class="data">
                 <p>SUBSCRIPTIONS</p>
                 <h4>
@@ -56,7 +56,7 @@
         <mdb-col xl="3" md="6" class="mb-r">
           <mdb-card cascade class="cascading-admin-card">
             <div class="admin-up">
-              <mdb-icon icon="pie-chart" class="light-blue lighten-1"/>
+              <mdb-icon icon="chart-pie" class="light-blue lighten-1"/>
               <div class="data">
                 <p>TRAFFIC</p>
                 <h4>
@@ -76,7 +76,7 @@
         <mdb-col xl="3" md="6" class="mb-r">
           <mdb-card cascade class="cascading-admin-card">
             <div class="admin-up">
-              <mdb-icon icon="bar-chart" class="red accent-2"/>
+              <mdb-icon icon="chart-bar" class="red accent-2"/>
               <div class="data">
                 <p>ORGANIC TRAFFIC</p>
                 <h4>
@@ -284,7 +284,7 @@
                     <div class="text-center">
                       <h5 class="my-3">Position</h5>
                       <mdb-btn color="primary" size="sm" @click.native="showFrameModalTop = true">Top</mdb-btn>
-                      <mdb-modal frame removeBackdrop position="top" v-if="showFrameModalTop" @close="showFrameModalTop = false">
+                      <mdb-modal frame removeBackdrop position="top" :show="showFrameModalTop" @close="showFrameModalTop = false">
                         <mdb-modal-body class="text-center">
                           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo provident fugiat reprehenderit nostrum quos...</span>
                           <mdb-btn color="secondary" @click.native="showFrameModalTop = false">Close</mdb-btn>
@@ -292,7 +292,7 @@
                         </mdb-modal-body>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showFrameModalBottom = true">Bottom</mdb-btn>
-                      <mdb-modal frame removeBackdrop position="bottom" v-if="showFrameModalBottom" @close="showFrameModalBottom = false">
+                      <mdb-modal frame removeBackdrop position="bottom" :show="showFrameModalBottom" @close="showFrameModalBottom = false">
                         <mdb-modal-body class="text-center">
                           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo provident fugiat reprehenderit nostrum quos...</span>
                           <mdb-btn color="secondary" @click.native="showFrameModalBottom = false">Close</mdb-btn>
@@ -307,7 +307,7 @@
                     <div class="text-center">
                       <h5 class="my-3">Position</h5>
                       <mdb-btn color="primary" size="sm" @click.native="showSideModalTopRight = true">Top right</mdb-btn>
-                      <mdb-modal side position="top-right" v-if="showSideModalTopRight" @close="showSideModalTopRight = false">
+                      <mdb-modal side position="top-right" :show="showSideModalTopRight" @close="showSideModalTopRight = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -318,7 +318,7 @@
                         </mdb-modal-footer>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showSideModalTopLeft = true">Top left</mdb-btn>
-                      <mdb-modal side position="top-left" v-if="showSideModalTopLeft" @close="showSideModalTopLeft = false">
+                      <mdb-modal side position="top-left" :show="showSideModalTopLeft" @close="showSideModalTopLeft = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -329,7 +329,7 @@
                         </mdb-modal-footer>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showSideModalBottomRight = true">Bottom right</mdb-btn>
-                      <mdb-modal side position="bottom-right" v-if="showSideModalBottomRight" @close="showSideModalBottomRight = false">
+                      <mdb-modal side position="bottom-right" :show="showSideModalBottomRight" @close="showSideModalBottomRight = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -340,7 +340,7 @@
                         </mdb-modal-footer>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showSideModalBottomLeft = true">Bottom left</mdb-btn>
-                      <mdb-modal side position="bottom-left" v-if="showSideModalBottomLeft" @close="showSideModalBottomLeft = false">
+                      <mdb-modal side position="bottom-left" :show="showSideModalBottomLeft" @close="showSideModalBottomLeft = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -358,7 +358,7 @@
                     <div class="text-center">
                       <h5 class="my-3">Size</h5>
                       <mdb-btn color="primary" size="sm" @click.native="showCentralModalSmall = true">Small</mdb-btn>
-                      <mdb-modal size="sm" v-if="showCentralModalSmall" @close="showCentralModalSmall = false">
+                      <mdb-modal size="sm" :show="showCentralModalSmall" @close="showCentralModalSmall = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -369,7 +369,7 @@
                         </mdb-modal-footer>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showCentralModalMedium = true">Medium</mdb-btn>
-                      <mdb-modal v-if="showCentralModalMedium" @close="showCentralModalMedium = false">
+                      <mdb-modal :show="showCentralModalMedium" @close="showCentralModalMedium = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -380,7 +380,7 @@
                         </mdb-modal-footer>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showCentralModalLarge = true">Large</mdb-btn>
-                      <mdb-modal size="lg" v-if="showCentralModalLarge" @close="showCentralModalLarge = false">
+                      <mdb-modal size="lg" :show="showCentralModalLarge" @close="showCentralModalLarge = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -391,7 +391,7 @@
                         </mdb-modal-footer>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showCentralModalFluid = true">Fluid</mdb-btn>
-                      <mdb-modal size="fluid" v-if="showCentralModalFluid" @close="showCentralModalFluid = false">
+                      <mdb-modal size="fluid" :show="showCentralModalFluid" @close="showCentralModalFluid = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -409,7 +409,7 @@
                     <div class="text-center">
                       <h5 class="my-3">Position</h5>
                       <mdb-btn color="primary" size="sm" @click.native="showFluidModalRight = true">Right</mdb-btn>
-                      <mdb-modal fullHeight position="right" v-if="showFluidModalRight" @close="showFluidModalRight = false">
+                      <mdb-modal fullHeight position="right" :show="showFluidModalRight" @close="showFluidModalRight = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -420,7 +420,7 @@
                         </mdb-modal-footer>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showFluidModalLeft = true">Left</mdb-btn>
-                      <mdb-modal fullHeight position="left" v-if="showFluidModalLeft" @close="showFluidModalLeft = false">
+                      <mdb-modal fullHeight position="left" :show="showFluidModalLeft" @close="showFluidModalLeft = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -431,7 +431,7 @@
                         </mdb-modal-footer>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showFluidModalTop = true">Top</mdb-btn>
-                      <mdb-modal fullHeight position="top" v-if="showFluidModalTop" @close="showFluidModalTop = false">
+                      <mdb-modal fullHeight position="top" :show="showFluidModalTop" @close="showFluidModalTop = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
@@ -442,7 +442,7 @@
                         </mdb-modal-footer>
                       </mdb-modal>
                       <mdb-btn color="primary" size="sm" @click.native="showFluidModalBottom = true">Bottom</mdb-btn>
-                      <mdb-modal fullHeight position="bottom" v-if="showFluidModalBottom" @close="showFluidModalBottom = false">
+                      <mdb-modal fullHeight position="bottom" :show="showFluidModalBottom" @close="showFluidModalBottom = false">
                         <mdb-modal-header>
                           <mdb-modal-title>Modal title</mdb-modal-title>
                         </mdb-modal-header>
