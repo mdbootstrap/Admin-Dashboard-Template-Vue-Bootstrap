@@ -1,12 +1,13 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 import Dashboard from '@/components/Dashboard'
 import Profile from '@/components/Profile'
 import Tables from '@/components/Tables'
 import Maps from '@/components/Maps'
 import BadGateway from '@/components/BadGateway'
 
-Vue.use(Router)
+
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
